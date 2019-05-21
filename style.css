@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap");
+
+html {
+  background-color: #212121;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: #000000 1px solid;
+}
+
+ul.nav-list {
+  min-width: 50%;
+  list-style: none;
+  padding-top: 20px;
+  height: 100%;
+}
+ul.nav-list li {
+  display: inline-block;
+  min-width: 100px;
+  height: 100%;
+  line-height: 50%;
+}
