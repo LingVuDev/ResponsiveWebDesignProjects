@@ -76,18 +76,21 @@ a:hover {
 
 /* Navigation bar */
 nav {
-  z-index: 2;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
   background: rgba(20, 20, 20, 0.8);
 }
 
-/* Overview Section */
+/* Title Section */
+.title-screen {
+  height: 100vh;
+}
 .overview {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: url("assets/bg.jpg");
 }
 
@@ -115,7 +118,17 @@ nav {
 }
 
 /* Projects bar */
+.project-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121212;
+  z-index: 2;
+}
+
 .projects {
+  top: 0px;
   background-color: #121212;
   height: 100px;
   width: 80%;
@@ -157,6 +170,14 @@ nav {
   100% {
     background-color: #121212;
   }
+}
+
+/* Project content */
+
+.project-content {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: burlywood;
 }
 
 /* Icons */
